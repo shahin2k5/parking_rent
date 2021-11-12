@@ -54,6 +54,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
+        
+            <a class="btn btn-info" style="margin:7px" href="{{ action('SubscriptionsController@create') }}">ADD BILL</a>
+            <a class="btn btn-warning" style="margin:7px" href="{{ action('InvoicesController@index') }}">INVOICES</a>
+        
     </nav>
 </header>
 <!-- END HEADER -->

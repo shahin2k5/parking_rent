@@ -20,6 +20,7 @@ use Illuminate\Http\Request;
 
 class MembersController extends Controller
 {
+     
     public function __construct()
     {
         $this->middleware('auth');
@@ -38,6 +39,8 @@ class MembersController extends Controller
         $drp_placeholder = $this->drpPlaceholder($request);
 
         $request->flash();
+        
+        $old_sort=true;
 
         return view('members.index', compact('members', 'count', 'drp_placeholder', 'old_sort'));
     }
